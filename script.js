@@ -1,7 +1,7 @@
 const textEl = document.getElementById('text')
 const speedEl = document.getElementById('speed')
-const text = 'Good morning...good coffe!'
-let idx = 1
+const text = 'Good morning...Good coffe!'
+let idx = 0
 let speed = 300 / speedEl.value
 
 writeText()
@@ -12,7 +12,7 @@ function writeText() {
     idx++
 
     if (idx > text.length) {
-        idx = 1
+        idx = 0
     }
 
     setTimeout(writeText, speed)
